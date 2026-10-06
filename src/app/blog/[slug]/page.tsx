@@ -19,122 +19,311 @@ export interface BlogPost {
   contentHtml: string;
 }
 
-// Mock database fetcher function
+// Complete mock database for 10 SEO-optimized blog posts
 export async function getPostData(slug: string): Promise<BlogPost | null> {
   const mockPosts: Record<string, BlogPost> = {
-    "arnica-montana-200-uses-benefits-dosage": {
-      slug: "arnica-montana-200-uses-benefits-dosage",
-      title: "Arnica Montana 200: Uses, Benefits & Dosage Guide",
+    "berberis-vulgaris-kidney-stones": {
+      slug: "berberis-vulgaris-kidney-stones",
+      title: "Berberis Vulgaris Mother Tincture (Q): Ultimate Guide for Kidney Stones",
       description:
-        "Learn about Arnica Montana 200C in homeopathy. Understand key uses for tissue trauma, muscle soreness, post-surgery recovery, and correct dosage instructions.",
+        "Complete guide on Berberis Vulgaris Q for kidney stones in Pakistan. Learn effective dosage, benefits, and how it dissolves renal calculi naturally.",
       keywords: [
-        "Arnica Montana 200",
-        "Homeopathy for Pain",
-        "Muscle Recovery",
-        "Arnica Dosage",
-        "Homeopathic Medicine Islamabad",
-        "Dr. Umar Farooq",
+        "Berberis Vulgaris uses in Urdu",
+        "homeopathic medicine for kidney stones in Pakistan",
+        "how to use Berberis Vulgaris Q",
+        "renal calculi homeopathic cure",
       ],
-      date: "October 4, 2026",
-      readTime: "4 min read",
+      date: "October 5, 2026",
+      readTime: "5 min read",
       author: "Dr. Umar Farooq (DHMS RMP)",
-      category: "Remedy Profile",
+      category: "Renal Health",
+      image: "/blog/kidney.jpg",
+      contentHtml: `
+        <p class="lead font-medium text-slate-700 text-lg leading-relaxed mb-6">
+          Renal calculi (kidney stones) cause excruciating flank pain, burning urination, and recurrent urinary infections. <strong>Berberis Vulgaris Mother Tincture (Q)</strong> is widely considered the primary homeopathic remedy for dissolving kidney stones and flushing out renal gravel naturally.
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">How Berberis Vulgaris Works for Kidney Stones</h2>
+        <p class="text-slate-600 leading-relaxed mb-6">
+          Berberis Vulgaris possesses powerful lithontriptic and diuretic properties. It softens the hard crystalline borders of calcium oxalate and uric acid stones, allowing them to break into finer particles and pass painlessly through the ureter.
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Key Symptoms Indicating Berberis Vulgaris</h2>
+        <ul class="list-disc pl-6 space-y-2 text-slate-600 mb-6">
+          <li>Sharp, radiant pain originating in the kidney region and radiating down into the bladder, thighs, or groin.</li>
+          <li>Bubbling or tearing sensation in the lumbar region.</li>
+          <li>Burning sensation in the urethra during and after urination.</li>
+          <li>Urinary sediment containing reddish-yellow uric acid crystals or cloudy mucus.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Dosage and How to Take Berberis Vulgaris Q</h2>
+        <ol class="list-decimal pl-6 space-y-2 text-slate-600 mb-6">
+          <li>Mix 10 to 15 drops of Berberis Vulgaris Q in half a glass of lukewarm water.</li>
+          <li>Take 3 times daily before meals.</li>
+          <li>Maintain high daily fluid intake (3 to 4 liters of clean water daily) to assist renal flushing.</li>
+        </ol>
+      `,
+    },
+    "piles-bawaseer-treatment-homeopathy": {
+      slug: "piles-bawaseer-treatment-homeopathy",
+      title: "Homeopathic Treatment for Piles (Bawaseer) Without Surgery",
+      description:
+        "Effective homeopathic medicine for Bawaseer in Pakistan. Learn how Aesculus Hippocastanum and Nux Vomica treat hemorrhoids and bleeding piles naturally.",
+      keywords: [
+        "Bawaseer homeopathic medicine",
+        "Aesculus Hippocastanum uses",
+        "bleeding piles treatment in homeopathy",
+        "hemorrhoids cure Pakistan",
+      ],
+      date: "October 3, 2026",
+      readTime: "6 min read",
+      author: "Dr. Umar Farooq (DHMS RMP)",
+      category: "Anorectal Health",
       image: "/blog/arnica.jpg",
       contentHtml: `
         <p class="lead font-medium text-slate-700 text-lg leading-relaxed mb-6">
-          Arnica Montana is one of the most celebrated and widely recognized remedies in classical homeopathy. Commonly known as Mountain Daisy or Leopard's Bane, this botanical remedy possesses remarkable therapeutic properties for tissue trauma, muscular strains, and postoperative recovery.
+          Piles (Hemorrhoids or Bawaseer) cause intense discomfort, pain, rectal swelling, and bleeding. Homeopathy offers a non-surgical cure by relieving venous congestion in the pelvic circulation.
         </p>
 
-        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">What is Arnica Montana 200C?</h2>
-        <p class="text-slate-600 leading-relaxed mb-6">
-          In homeopathic pharmacy, <strong>Arnica Montana 200C</strong> (or 200CH) represents a high-potency dilution prepared according to strict Hahnemannian pharmacopoeia standards. It acts deeply on the vascular and muscular systems to reduce extravasation of blood, diminish swelling, and relieve intense physical soreness.
-        </p>
-
-        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Key Clinical Uses of Arnica Montana</h2>
+        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Top Homeopathic Remedies for Piles</h2>
         <ul class="list-disc pl-6 space-y-2 text-slate-600 mb-6">
-          <li><strong>Physical Trauma & Bruising:</strong> Rapidly reduces subcutaneous discoloration and localized swelling following blunt force injuries, falls, or sprains.</li>
-          <li><strong>Post-Surgical Healing:</strong> Promotes faster soft-tissue repair and minimizes surgical site discomfort when prescribed post-procedure.</li>
-          <li><strong>Muscle Overexertion:</strong> Relieves the classic "sore, beaten, bruised" sensation following strenuous physical labor or intense athletic training.</li>
-          <li><strong>Dental Procedures:</strong> Soothes painful gums and nerve tissue inflammation following dental extractions or oral surgery.</li>
-        </ul>
-
-        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Recommended Dosage & Administration</h2>
-        <p class="text-slate-600 leading-relaxed mb-4">
-          While exact posology must always be tailored during an individual homeopathic consultation, standard guidance for acute pain or soreness includes:
-        </p>
-        <ol class="list-decimal pl-6 space-y-2 text-slate-600 mb-6">
-          <li>Dissolve 3 to 4 Globules (sugar pellets) under the tongue away from food, drink, or strong aromatics (mint, coffee, camphor).</li>
-          <li>For acute traumatic injuries, repeat dosage every 4 to 6 hours for the first 24 to 48 hours until symptoms improve.</li>
-          <li>Always consult a qualified homeopathic medical practitioner (RHMP) for chronic conditions or high-potency repetitions.</li>
-        </ol>
-
-        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Why Choose Classical Homeopathy?</h2>
-        <p class="text-slate-600 leading-relaxed mb-6">
-          Classical homeopathy treats the patient as a whole individual, addressing underlying constitutional factors, temperament, and root causes rather than merely masking localized symptoms.
-        </p>
-      `,
-    },
-    "holistic-homeopathic-approach-to-chronic-eczema": {
-      slug: "holistic-homeopathic-approach-to-chronic-eczema",
-      title: "A Holistic Homeopathic Approach to Chronic Eczema",
-      description:
-        "Explore how constitutional homeopathic remedies target internal immune imbalances to provide lasting relief for eczema and psoriasis.",
-      keywords: [
-        "Homeopathy for Eczema",
-        "Skin Disease Treatment",
-        "Dr. Umar Farooq",
-        "Holistic Eczema Cure",
-        "Natural Skin Remedy",
-      ],
-      date: "September 28, 2026",
-      readTime: "6 min read",
-      author: "Dr. Umar Farooq (DHMS RMP)",
-      category: "Skin Health",
-      image: "/blog/eczema.jpg",
-      contentHtml: `
-        <p class="lead font-medium text-slate-700 text-lg leading-relaxed mb-6">
-          Chronic skin conditions such as eczema, psoriasis, and allergic dermatitis are not merely superficial ailments; they are cutaneous reflections of deeper internal immune disharmonies. Classical homeopathy seeks to restore equilibrium from within.
-        </p>
-
-        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Addressing the Root Cause of Eczema</h2>
-        <p class="text-slate-600 leading-relaxed mb-6">
-          Topical corticosteroid salves may temporarily suppress cutaneous flare-ups, but frequently result in rebound exacerbations once discontinued. Individualized homeopathy identifies specific constitutional triggers—such as digestive microflora imbalances, emotional stress, or environmental sensitivity.
-        </p>
-
-        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Key Constitutional Skin Remedies</h2>
-        <ul class="list-disc pl-6 space-y-2 text-slate-600 mb-6">
-          <li><strong>Sulphur:</strong> Indicated for dry, scaly skin with intense burning and nocturnal itching aggravated by warmth and washing.</li>
-          <li><strong>Graphites:</strong> Highly effective for thick, cracked skin with honey-like sticky exudations in skin folds.</li>
-          <li><strong>Arsenicum Album:</strong> Prescribed for dry, itching eruptions accompanied by systemic restlessness and anxiety.</li>
+          <li><strong>Aesculus Hippocastanum:</strong> Ideal for dry, painful piles with a sensation of small sticks filling the rectum.</li>
+          <li><strong>Hamamelis Virginica:</strong> The top choice for dark, profuse bleeding piles accompanied by soreness.</li>
+          <li><strong>Nux Vomica:</strong> Prescribed for piles caused by chronic constipation, sedentary habits, or spicy foods.</li>
+          <li><strong>Collinsonia Canadensis:</strong> Excellent for obstinate constipation and painful vascular hemorrhoids during pregnancy.</li>
         </ul>
       `,
     },
-    "nux-vomica-homeopathy-for-ibs-acid-reflux": {
-      slug: "nux-vomica-homeopathy-for-ibs-acid-reflux",
-      title: "Nux Vomica: Homeopathy for IBS & Acid Reflux Relief",
+    "uric-acid-homeopathic-medicine": {
+      slug: "uric-acid-homeopathic-medicine",
+      title: "Best Homeopathic Medicine for Uric Acid & Joint Pain Relief",
       description:
-        "Discover how Nux Vomica addresses IBS, chronic heartburn, gastric spasms, and lifestyle digestive ailments naturally.",
+        "Lower uric acid levels naturally with homeopathic drops in Pakistan. Discover Colchicum and Urtica Urens benefits for severe gout and joint pain relief.",
       keywords: [
-        "Nux Vomica Homeopathy",
-        "IBS Treatment Islamabad",
-        "Acid Reflux Cure",
-        "Digestive Wellness",
-        "Homeopathic Gastroenterology",
+        "Uric acid homeopathic drops in Pakistan",
+        "Colchicum uses",
+        "gout treatment naturally",
+        "joint pain relief homeopathy",
       ],
-      date: "September 15, 2026",
-      readTime: "5 min read",
+      date: "September 30, 2026",
+      readTime: "4 min read",
       author: "Dr. Umar Farooq (DHMS RMP)",
-      category: "Digestive Wellness",
+      category: "Metabolic Health",
       image: "/blog/digestive.jpg",
       contentHtml: `
         <p class="lead font-medium text-slate-700 text-lg leading-relaxed mb-6">
-          Modern sedentary routines, high work stress, and spicy culinary habits frequently trigger gastrointestinal distress. Nux Vomica stands as the chief homeopathic remedy for restoring digestive harmony.
+          Elevated serum uric acid causes severe joint inflammation, sharp big toe pain, and stiffness (Gout). Homeopathy regulates purine metabolism and accelerates renal excretion of uric acid.
         </p>
 
-        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Indications for Nux Vomica</h2>
-        <p class="text-slate-600 leading-relaxed mb-6">
-          It is specifically indicated for individuals experiencing acid reflux, morning stomach heaviness, irritable bowel spasticity, and an ineffectual urge for bowel movements.
+        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Top Remedies for Hyperuricemia & Gout</h2>
+        <ul class="list-disc pl-6 space-y-2 text-slate-600 mb-6">
+          <li><strong>Colchicum Autumnale:</strong> Essential for acute gouty arthritis where the joint is red, hot, swollen, and cannot tolerate touch.</li>
+          <li><strong>Urtica Urens Q:</strong> Helps dissolve uric acid crystal deposits and flush them through urine.</li>
+          <li><strong>Benzoic Acid:</strong> Best suited when urine has an intensely strong, pungent odor and joints crack painfully.</li>
+        </ul>
+      `,
+    },
+    "phytolacca-berry-weight-loss": {
+      slug: "phytolacca-berry-weight-loss",
+      title: "Phytolacca Berry Tablets: Uses for Weight Loss & Fat Reduction",
+      description:
+        "Natural weight loss with Phytolacca Berry homeopathic tablets in Pakistan. Learn correct dosage, side effects, and effective fat burning tips.",
+      keywords: [
+        "Homeopathic weight loss medicine in Pakistan",
+        "Phytolacca Berry side effects",
+        "how to lose weight with homeopathy",
+        "fat reduction drops",
+      ],
+      date: "September 26, 2026",
+      readTime: "5 min read",
+      author: "Dr. Umar Farooq (DHMS RMP)",
+      category: "Weight Management",
+      image: "/blog/eczema.jpg",
+      contentHtml: `
+        <p class="lead font-medium text-slate-700 text-lg leading-relaxed mb-6">
+          Obesity and stubborn fat accumulation increase metabolic risks. <strong>Phytolacca Berry</strong> is a renowned homeopathic remedy designed to regulate digestion and stimulate metabolic fat reduction.
         </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Benefits of Phytolacca Berry</h2>
+        <ul class="list-disc pl-6 space-y-2 text-slate-600 mb-6">
+          <li>Reduces excessive appetite and unwholesome cravings.</li>
+          <li>Improves basal metabolic rate (BMR) without chemical stimulants.</li>
+          <li>Safe and free from harmful side effects associated with synthetic fat burners.</li>
+        </ul>
+      `,
+    },
+    "pcos-treatment-homeopathy": {
+      slug: "pcos-treatment-homeopathy",
+      title: "PCOS Homeopathic Treatment: Regulate Periods Naturally",
+      description:
+        "Holistic PCOS treatment in homeopathy. Discover Pulsatilla 30 and Sepia uses to balance female hormones and cure irregular periods naturally.",
+      keywords: [
+        "PCOS cure in homeopathy",
+        "Pulsatilla 30 uses",
+        "irregular periods homeopathic medicine",
+        "female hormone balance",
+      ],
+      date: "September 22, 2026",
+      readTime: "6 min read",
+      author: "Dr. Umar Farooq (DHMS RMP)",
+      category: "Women's Health",
+      image: "/blog/arnica.jpg",
+      contentHtml: `
+        <p class="lead font-medium text-slate-700 text-lg leading-relaxed mb-6">
+          Polycystic Ovarian Syndrome (PCOS) triggers hormonal imbalance, irregular menstruation, weight gain, and facial hair growth. Homeopathy provides constitutional balance without synthetic hormones.
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Key Remedies for PCOS</h2>
+        <ul class="list-disc pl-6 space-y-2 text-slate-600 mb-6">
+          <li><strong>Pulsatilla Nigricans 30:</strong> The leading remedy for delayed or suppressed menses in mild, gentle temperaments.</li>
+          <li><strong>Sepia Officinalis:</strong> Indicated for irregular cycles, pelvic bearing-down sensations, and hormonal mood swings.</li>
+          <li><strong>Calcarea Carbonica:</strong> Prescribed for PCOS accompanied by weight gain, profuse sweating, and fatigue.</li>
+        </ul>
+      `,
+    },
+    "berberis-aquifolium-acne-glowing-skin": {
+      slug: "berberis-aquifolium-acne-glowing-skin",
+      title: "Berberis Aquifolium Q: The Best Homeopathic Medicine for Glowing Skin & Acne",
+      description:
+        "Achieve glowing, pimple-free skin with Berberis Aquifolium Q. Learn gel application, dark spot reduction, and skin whitening homeopathy tips.",
+      keywords: [
+        "Berberis Aquifolium gel uses",
+        "homeopathic medicine for pimples and dark spots",
+        "skin whitening homeopathy",
+        "acne treatment Pakistan",
+      ],
+      date: "September 18, 2026",
+      readTime: "4 min read",
+      author: "Dr. Umar Farooq (DHMS RMP)",
+      category: "Dermatology",
+      image: "/blog/acne.jpg",
+      contentHtml: `
+        <p class="lead font-medium text-slate-700 text-lg leading-relaxed mb-6">
+          Facial acne, dark spots, hyperpigmentation, and dull complexions respond wonderfully to <strong>Berberis Aquifolium Mother Tincture (Q)</strong>—often referred to as the herbal gold for radiant skin in homeopathy.
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Benefits of Berberis Aquifolium</h2>
+        <ul class="list-disc pl-6 space-y-2 text-slate-600 mb-6">
+          <li>Clears stubborn acne blemishes and hyperpigmentation marks.</li>
+          <li>Improves skin tone and enhances natural facial glow.</li>
+          <li>Purifies blood and detoxifies facial pores.</li>
+        </ul>
+      `,
+    },
+    "jaborandi-hair-fall-regrowth": {
+      slug: "jaborandi-hair-fall-regrowth",
+      title: "Jaborandi & Wiesbaden for Extreme Hair Fall and Hair Regrowth",
+      description:
+        "Stop hair loss and promote new follicle regrowth with Jaborandi hair oil and Wiesbaden 30. Proven homeopathic baldness solution in Pakistan.",
+      keywords: [
+        "Best homeopathic hair oil in Pakistan",
+        "Jaborandi mother tincture uses",
+        "baldness treatment homeopathy",
+        "hair regrowth drops",
+      ],
+      date: "September 14, 2026",
+      readTime: "5 min read",
+      author: "Dr. Umar Farooq (DHMS RMP)",
+      category: "Hair Care",
+      image: "/blog/hair.jpg",
+      contentHtml: `
+        <p class="lead font-medium text-slate-700 text-lg leading-relaxed mb-6">
+          Excessive hair shedding, thinning scalp, and premature balding can cause immense distress. <strong>Jaborandi (Pilocarpus Microphyllus)</strong> nourishes hair roots and stimulates dormant hair follicles.
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Effective Homeopathic Hair Protocol</h2>
+        <ul class="list-disc pl-6 space-y-2 text-slate-600 mb-6">
+          <li><strong>Jaborandi Mother Tincture:</strong> Mix with coconut or almond oil and massage into scalp 2–3 times weekly.</li>
+          <li><strong>Wiesbaden 30C:</strong> Strengthens hair shaft texture and promotes rapid new growth.</li>
+          <li><strong>Acidum Phosphoricum:</strong> Prescribed when hair loss is triggered by grief, mental stress, or illness.</li>
+        </ul>
+      `,
+    },
+    "sciatica-pain-relief-homeopathy": {
+      slug: "sciatica-pain-relief-homeopathy",
+      title: "Sciatica Pain Relief: Fast-Acting Homeopathic Remedies for Nerve Pain",
+      description:
+        "Relieve severe sciatica nerve pain and lower back aches quickly with Colocynthis 200 and Hypericum. Safe, non-habit forming treatment in Pakistan.",
+      keywords: [
+        "Sciatica homeopathic medicine",
+        "Colocynthis 200 uses",
+        "lower back pain treatment in Urdu",
+        "sciatica nerve pain cure",
+      ],
+      date: "September 10, 2026",
+      readTime: "5 min read",
+      author: "Dr. Umar Farooq (DHMS RMP)",
+      category: "Pain Management",
+      image: "/blog/digestive.jpg",
+      contentHtml: `
+        <p class="lead font-medium text-slate-700 text-lg leading-relaxed mb-6">
+          Sciatica causes shooting, electric pain originating from the lower back down through the sciatic nerve into the legs. Homeopathy offers fast nerve pain relief without heavy painkiller dependency.
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Leading Sciatica Remedies</h2>
+        <ul class="list-disc pl-6 space-y-2 text-slate-600 mb-6">
+          <li><strong>Colocynthis 200:</strong> The primary remedy for left-sided sciatica pain relieved by hard pressure and bending double.</li>
+          <li><strong>Gnaphalium Polycephalum:</strong> Best for sciatica pain alternating with numbness in legs.</li>
+          <li><strong>Hypericum Perforatum:</strong> Unmatched for nerve damage, spinal trauma, and radiating neuropathic pain.</li>
+        </ul>
+      `,
+    },
+    "tonsils-medicine-kids-homeopathy": {
+      slug: "tonsils-medicine-kids-homeopathy",
+      title: "Homeopathic Medicine for Tonsils in Kids (No Antibiotics Needed)",
+      description:
+        "Gentle homeopathic treatment for enlarged tonsils in children. Learn Baryta Carb 30 and Belladonna uses to avoid surgery and antibiotics.",
+      keywords: [
+        "Enlarged tonsils homeopathic cure",
+        "Baryta Carb 30 uses",
+        "Belladonna for fever in children",
+        "pediatric tonsillitis remedy",
+      ],
+      date: "September 05, 2026",
+      readTime: "4 min read",
+      author: "Dr. Umar Farooq (DHMS RMP)",
+      category: "Pediatrics",
+      image: "/blog/arnica.jpg",
+      contentHtml: `
+        <p class="lead font-medium text-slate-700 text-lg leading-relaxed mb-6">
+          Recurrent tonsillitis, throat swelling, and high fever in children often lead parents to repeated antibiotic courses or tonsillectomy. Homeopathy safely strengthens pediatric immunity to prevent surgery.
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Top Pediatric Tonsil Remedies</h2>
+        <ul class="list-disc pl-6 space-y-2 text-slate-600 mb-6">
+          <li><strong>Baryta Carbonica 30:</strong> The premiere remedy for chronic enlargement of tonsils in sensitive children.</li>
+          <li><strong>Belladonna 30:</strong> Prescribed for acute redness, rapid fever, and throat pain with difficulty swallowing.</li>
+          <li><strong>Hepar Sulphuris:</strong> Effective when throat pain feels like a splinter sticking in the tonsil.</li>
+        </ul>
+      `,
+    },
+    "dust-allergy-asthma-homeopathy": {
+      slug: "dust-allergy-asthma-homeopathy",
+      title: "Histaminum & Arsenicum Album for Dust Allergy and Asthma Relief",
+      description:
+        "Long-term relief from dust allergy, chronic sneezing, and bronchial asthma in Pakistan using Histaminum 30 and Arsenicum Album.",
+      keywords: [
+        "Dust allergy treatment in Pakistan",
+        "homeopathic medicine for asthma",
+        "sneezing and runny nose remedy",
+        "allergic rhinitis cure",
+      ],
+      date: "September 01, 2026",
+      readTime: "6 min read",
+      author: "Dr. Umar Farooq (DHMS RMP)",
+      category: "Respiratory Care",
+      image: "/blog/eczema.jpg",
+      contentHtml: `
+        <p class="lead font-medium text-slate-700 text-lg leading-relaxed mb-6">
+          Dust allergies, allergic rhinitis, and asthma cause frequent morning sneezing bursts, watery eyes, and breathing tightness. Homeopathy desensitizes the respiratory system naturally.
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">Top Allergy Remedies</h2>
+        <ul class="list-disc pl-6 space-y-2 text-slate-600 mb-6">
+          <li><strong>Histaminum Hydrochloricum 30:</strong> Acts as a natural antihistamine against dust mite and pollen flare-ups.</li>
+          <li><strong>Arsenicum Album 30:</strong> Excellent for watery nasal discharge, burning eyes, and nocturnal asthma breathlessness.</li>
+          <li><strong>Sabadilla:</strong> Specific for violent paroxysms of sneezing triggered by dust or strong smells.</li>
+        </ul>
       `,
     },
   };

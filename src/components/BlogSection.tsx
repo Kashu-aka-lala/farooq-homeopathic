@@ -21,38 +21,122 @@ export interface Article {
 const mockArticles: Article[] = [
   {
     id: "1",
-    slug: "arnica-montana-200-uses-benefits-dosage",
-    title: "Arnica Montana 200: Uses, Benefits & Dosage Guide",
+    slug: "berberis-vulgaris-kidney-stones",
+    title: "Berberis Vulgaris Mother Tincture (Q): Ultimate Guide for Kidney Stones",
     excerpt:
-      "Discover how classical homeopathic Arnica Montana accelerates soft tissue recovery, relieves muscle soreness, and speeds natural healing.",
-    category: "Remedy Profile",
-    readTime: "4 min read",
-    date: "Oct 4, 2026",
-    image: "/blog/arnica.jpg",
+      "Learn how Berberis Vulgaris Q dissolves renal calculi, relieves flank pain, and clears kidney stone gravel naturally.",
+    category: "Renal Health",
+    readTime: "5 min read",
+    date: "Oct 5, 2026",
+    image: "/blog/kidney.jpg",
     author: "Dr. Umar Farooq",
   },
   {
     id: "2",
-    slug: "holistic-homeopathic-approach-to-chronic-eczema",
-    title: "A Holistic Homeopathic Approach to Chronic Eczema",
+    slug: "piles-bawaseer-treatment-homeopathy",
+    title: "Homeopathic Treatment for Piles (Bawaseer) Without Surgery",
     excerpt:
-      "Explore constitutional homeopathic remedies that target internal inflammation and provide lasting relief for eczema and psoriasis.",
-    category: "Skin Health",
+      "Discover effective homeopathic remedies for bleeding piles and hemorrhoids using Aesculus, Hamamelis, and Nux Vomica.",
+    category: "Anorectal Health",
     readTime: "6 min read",
-    date: "Sep 28, 2026",
-    image: "/blog/eczema.jpg",
+    date: "Oct 3, 2026",
+    image: "/blog/arnica.jpg",
     author: "Dr. Umar Farooq",
   },
   {
     id: "3",
-    slug: "nux-vomica-homeopathy-for-ibs-acid-reflux",
-    title: "Nux Vomica: Homeopathy for IBS & Acid Reflux Relief",
+    slug: "uric-acid-homeopathic-medicine",
+    title: "Best Homeopathic Medicine for Uric Acid & Joint Pain Relief",
     excerpt:
-      "How individual constitutional remedies restore gut health, reduce gastric bloating, and soothe chronic acidity without side effects.",
-    category: "Digestive Wellness",
-    readTime: "5 min read",
-    date: "Sep 15, 2026",
+      "Lower serum uric acid levels and cure acute gout joint pain naturally with Colchicum Autumnale and Urtica Urens.",
+    category: "Metabolic Health",
+    readTime: "4 min read",
+    date: "Sep 30, 2026",
     image: "/blog/digestive.jpg",
+    author: "Dr. Umar Farooq",
+  },
+  {
+    id: "4",
+    slug: "phytolacca-berry-weight-loss",
+    title: "Phytolacca Berry Tablets: Uses for Weight Loss & Fat Reduction",
+    excerpt:
+      "Stimulate metabolic fat reduction and curb unwholesome cravings with Phytolacca Berry homeopathic tablets.",
+    category: "Weight Management",
+    readTime: "5 min read",
+    date: "Sep 26, 2026",
+    image: "/blog/eczema.jpg",
+    author: "Dr. Umar Farooq",
+  },
+  {
+    id: "5",
+    slug: "pcos-treatment-homeopathy",
+    title: "PCOS Homeopathic Treatment: Regulate Periods Naturally",
+    excerpt:
+      "Holistic PCOS treatment to balance female hormones, cure irregular periods, and reduce ovarian cysts naturally.",
+    category: "Women's Health",
+    readTime: "6 min read",
+    date: "Sep 22, 2026",
+    image: "/blog/arnica.jpg",
+    author: "Dr. Umar Farooq",
+  },
+  {
+    id: "6",
+    slug: "berberis-aquifolium-acne-glowing-skin",
+    title: "Berberis Aquifolium Q: Best Homeopathic Medicine for Glowing Skin & Acne",
+    excerpt:
+      "Achieve pimple-free, glowing skin and clear dark spots using Berberis Aquifolium Mother Tincture.",
+    category: "Dermatology",
+    readTime: "4 min read",
+    date: "Sep 18, 2026",
+    image: "/blog/acne.jpg",
+    author: "Dr. Umar Farooq",
+  },
+  {
+    id: "7",
+    slug: "jaborandi-hair-fall-regrowth",
+    title: "Jaborandi & Wiesbaden for Extreme Hair Fall and Hair Regrowth",
+    excerpt:
+      "Stop hair loss and stimulate new follicle growth using Jaborandi hair oil and Wiesbaden 30C remedies.",
+    category: "Hair Care",
+    readTime: "5 min read",
+    date: "Sep 14, 2026",
+    image: "/blog/hair.jpg",
+    author: "Dr. Umar Farooq",
+  },
+  {
+    id: "8",
+    slug: "sciatica-pain-relief-homeopathy",
+    title: "Sciatica Pain Relief: Fast-Acting Homeopathic Remedies for Nerve Pain",
+    excerpt:
+      "Relieve intense sciatic nerve pain, shooting leg aches, and spinal stiffness using Colocynthis 200.",
+    category: "Pain Management",
+    readTime: "5 min read",
+    date: "Sep 10, 2026",
+    image: "/blog/digestive.jpg",
+    author: "Dr. Umar Farooq",
+  },
+  {
+    id: "9",
+    slug: "tonsils-medicine-kids-homeopathy",
+    title: "Homeopathic Medicine for Tonsils in Kids (No Antibiotics Needed)",
+    excerpt:
+      "Safe, gentler pediatric remedies for enlarged tonsils, throat pain, and fever without surgical intervention.",
+    category: "Pediatrics",
+    readTime: "4 min read",
+    date: "Sep 05, 2026",
+    image: "/blog/arnica.jpg",
+    author: "Dr. Umar Farooq",
+  },
+  {
+    id: "10",
+    slug: "dust-allergy-asthma-homeopathy",
+    title: "Histaminum & Arsenicum Album for Dust Allergy and Asthma Relief",
+    excerpt:
+      "Desensitize respiratory allergies, morning sneezing bursts, and bronchial asthma using Histaminum and Arsenicum.",
+    category: "Respiratory Care",
+    readTime: "6 min read",
+    date: "Sep 01, 2026",
+    image: "/blog/eczema.jpg",
     author: "Dr. Umar Farooq",
   },
 ];
@@ -94,7 +178,7 @@ export default function BlogSection() {
               href="/blog"
               className="inline-flex items-center gap-2 px-5 py-3 text-sm font-bold text-green-700 bg-green-50 hover:bg-green-100 rounded-xl border border-green-200/60 active:scale-95 transition-all group"
             >
-              <span>View All Articles</span>
+              <span>View All 10 Articles</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
@@ -108,7 +192,7 @@ export default function BlogSection() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-30px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
               className="bg-white rounded-2xl border border-slate-200/80 shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden group"
             >
               {/* Thumbnail Image Container */}
@@ -140,7 +224,7 @@ export default function BlogSection() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-bold text-slate-900 group-hover:text-green-700 transition-colors leading-snug mb-3">
+                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-green-700 transition-colors leading-snug mb-3">
                     <Link href={`/blog/${article.slug}`}>
                       {article.title}
                     </Link>
