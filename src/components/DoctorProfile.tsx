@@ -25,7 +25,7 @@ export default function DoctorProfile() {
           >
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg sm:shadow-xl bg-white aspect-[4/5] group border border-slate-100">
               <Image
-                src="/doctor.png"
+                src="/doctor.jpeg"
                 alt="Dr. Umar Farooq (DHMS RMP) - Classical Homeopathic Practitioner"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
