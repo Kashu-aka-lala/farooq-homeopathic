@@ -141,12 +141,15 @@ const mockArticles: Article[] = [
   },
 ];
 
+// Duplicate mock articles for seamless infinite horizontal scrolling marquee
+const duplicatedPosts = [...mockArticles, ...mockArticles];
+
 export default function BlogSection() {
   return (
-    <section id="blog" className="py-14 sm:py-24 bg-slate-50 overflow-hidden">
+    <section id="blog" className="py-14 sm:py-24 bg-slate-50 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-14 gap-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -178,22 +181,25 @@ export default function BlogSection() {
               href="/blog"
               className="inline-flex items-center gap-2 px-5 py-3 text-sm font-bold text-green-700 bg-green-50 hover:bg-green-100 rounded-xl border border-green-200/60 active:scale-95 transition-all group"
             >
-              <span>View All 10 Articles</span>
+              <span>View All Articles</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
         </div>
+      </div>
 
-        {/* 3-Column Blog Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {mockArticles.map((article, index) => (
-            <motion.article
-              key={article.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-30px" }}
-              transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
-              className="bg-white rounded-2xl border border-slate-200/80 shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden group"
+      {/* Infinite Horizontal Marquee Container */}
+      <div className="relative w-full overflow-hidden">
+        {/* Soft edge gradient fades */}
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-28 bg-gradient-to-r from-slate-50 to-transparent z-10" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-28 bg-gradient-to-l from-slate-50 to-transparent z-10" />
+
+        {/* Marquee Motion Track */}
+        <div className="flex w-max gap-6 sm:gap-8 animate-marquee pause-on-hover py-4 px-4">
+          {duplicatedPosts.map((article, index) => (
+            <article
+              key={`${article.id}-${index}`}
+              className="w-[320px] md:w-[400px] flex-shrink-0 bg-white rounded-2xl border border-slate-200/80 shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden group"
             >
               {/* Thumbnail Image Container */}
               <div className="relative w-full aspect-[16/9] bg-slate-100 overflow-hidden">
@@ -201,7 +207,7 @@ export default function BlogSection() {
                   src={article.image}
                   alt={article.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 320px, 400px"
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                 />
                 <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-lg border border-white/60 text-xs font-bold text-slate-800 shadow-xs flex items-center gap-1.5">
@@ -224,14 +230,14 @@ export default function BlogSection() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-green-700 transition-colors leading-snug mb-3">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-green-700 transition-colors leading-snug mb-3 line-clamp-2">
                     <Link href={`/blog/${article.slug}`}>
                       {article.title}
                     </Link>
                   </h3>
 
                   {/* Excerpt */}
-                  <p className="text-sm text-slate-600 leading-relaxed line-clamp-3 mb-6">
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-3 mb-6">
                     {article.excerpt}
                   </p>
                 </div>
@@ -250,7 +256,7 @@ export default function BlogSection() {
                   </Link>
                 </div>
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>
