@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, Home, User, Stethoscope, Star, MapPin, MessageCircle } from "lucide-react";
+import { Menu, X, Home, User, Stethoscope, Star, MapPin, MessageCircle, BookOpen } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
@@ -35,6 +35,7 @@ export default function Navbar() {
     { name: "Home", href: "#home", icon: Home },
     { name: "About", href: "#about", icon: User },
     { name: "Treatments", href: "#treatments", icon: Stethoscope },
+    { name: "Blog", href: "#blog", icon: BookOpen },
     { name: "Reviews", href: "#reviews", icon: Star },
     { name: "Visit Us", href: "#visit", icon: MapPin },
   ];

@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import DoctorProfile from "@/components/DoctorProfile";
 import Treatments from "@/components/Treatments";
+import BlogSection from "@/components/BlogSection";
 import Testimonials from "@/components/Testimonials";
 import VisitInfo from "@/components/VisitInfo";
 import Footer from "@/components/Footer";
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <DoctorProfile />
       <Treatments />
+      <BlogSection />
       <Testimonials />
       <VisitInfo />
       <Footer />
